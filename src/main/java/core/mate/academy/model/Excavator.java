@@ -12,4 +12,9 @@ public class Excavator extends Machine {
     public void doWork() {
         System.out.println("Excavator started to work");
     }
+
+    @Override
+    public Excavator clone() throws CloneNotSupportedException {
+        return (Excavator) super.clone();
+    }
 }
